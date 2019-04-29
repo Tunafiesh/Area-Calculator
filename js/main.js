@@ -50,13 +50,23 @@ function clearBtn(){
 };
 
 // Calculate Area
-function calculating(e) {
-    let base = document.getElementById('base').value
-
+function calculating(event) {
+    let base = document.getElementById('base').value;
+    let height = document.getElementById('height').value;
     console.log(base);
+    console.log(height);
+    console.log()
     if(square.classList.contains = 'active-link') {
+        let answer = base * height;
+        calculation.innerText = answer;
+    } else if(triangle.classList.contains = 'active-link') {
+        base = base/2;
+        let answer = base * height;
+        calculation.innerText = answer;
+    } else{
 
     }
     
-    e.preventDefault();
+    clearBtn();
+    event.preventDefault();
 }
