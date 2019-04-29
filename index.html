@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <title>Area Calculator</title>
 </head>
+
 <body>
     <header id="section-header">
         <nav class="white">
@@ -20,11 +22,11 @@
             <div class="card">
                 <h3 class="center">Calculate</h3>
                 <div class="row">
-                    <div id="shape-selector">
-                        <ul class="pagination center">
-                            <li><a href="#!" id="square" class="btn white-text">Square</a></li>
-                            <li><a href="#!" id="rectangle" class="btn white-text">Rectangle</a></li>
-                            <li><a href="#!" id="triangle" class="btn white-text">Triangle</a></li>
+                    <div>
+                        <ul class="pagination center" id="shape-selector">
+                            <li class="shape"><a href="#!" id="square" class="btn white-text waves-effect">Square</a></li>
+                            <li class="shape"><a href="#!" id="rectangle" class="btn white-text waves-effect">Rectangle</a></li>
+                            <li class="shape"><a href="#!" id="triangle" class="btn white-text waves-effect">Triangle</a></li>
                         </ul>
                     </div>
                     <form id="calculator col s12">
@@ -35,28 +37,29 @@
                                 <!--<label for="base">Enter base value</label> -->
                             </div>
                         </div>
-                            <div class="row">
-                                <h6 class="col s1 offset-s4">Height:</h6>
-                                <div class="col s2">
-                                    <input type="number" name="height">
-                                </div>
+                        <div class="row">
+                            <h6 class="col s1 offset-s4">Height:</h6>
+                            <div class="col s2">
+                                <input type="number" name="height">
                             </div>
-                        </div> 
-                        <div class="center" id="calculate">
-                        <button type="submit" id="calculate-btn" class="btn">Submit</button>
                         </div>
-                        <br>
-                    </form>
-                    <div class="calculation center">
-                        <h4 class="answer"></h4>
-                        <br>
-                    </div>
+                </div>
+                <div class="center" id="calculate">
+                    <button type="submit" id="calculate-btn" class="btn">Submit</button>
+                </div>
+                <br>
+                </form>
+                <div class="calculation center">
+                    <h4 class="answer"></h4>
+                    <br>
                 </div>
             </div>
         </div>
+    </div>
     </div>
 
     <script src="js/materialize.min.js"></script>
     <script src="js/main.js"></script>
 </body>
+
 </html>
