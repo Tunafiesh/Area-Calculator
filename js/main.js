@@ -21,29 +21,29 @@ calculationBtn.addEventListener('click', calculating)
 // Square Selector
 function squareCalculator() {
     clearBtn()
-    if(square.classList.contains = 'btn white-text waves-effect'){
-    square.className += ' active-link z-depth-0'
+    if (square.classList.contains = 'btn white-text waves-effect') {
+        square.className += ' active-link z-depth-0'
     }
 };
 
 // Rectangle Selector
 function rectangleCalculator() {
     clearBtn()
-    if(rectangle.classList.contains = 'btn white-text waves-effect'){
-    rectangle.className += ' active-link z-depth-0'
+    if (rectangle.classList.contains = 'btn white-text waves-effect') {
+        rectangle.className += ' active-link z-depth-0'
     }
 };
 
 // Triangle Selector
 function triangleCalculator() {
     clearBtn()
-    if(triangle.classList.contains = 'btn white-text waves-effect'){
-    triangle.className += ' active-link z-depth-0'
+    if (triangle.classList.contains = 'btn white-text waves-effect') {
+        triangle.className += ' active-link z-depth-0'
     }
 };
 
 // Clear Button Selection
-function clearBtn(){
+function clearBtn() {
     square.className = 'btn white-text waves-effect'
     rectangle.className = 'btn white-text waves-effect'
     triangle.className = 'btn white-text waves-effect'
@@ -55,18 +55,17 @@ function calculating(event) {
     let height = document.getElementById('height').value;
     console.log(base);
     console.log(height);
-    console.log()
-    if(square.classList.contains = 'active-link') {
+    console.log(square.classList.contains, rectangle.classList.contains, triangle.classList.contains)
+    if (square.classList.contains = 'active-link') {
         let answer = base * height;
         calculation.innerText = answer;
-    } else if(triangle.classList.contains = 'active-link') {
-        base = base/2;
+    } else if (triangle.classList.contains = 'active-link') {
         let answer = base * height;
-        calculation.innerText = answer;
-    } else{
+        calculation.innerText = answer / 2;
+    } else {
 
     }
-    
+
     clearBtn();
     event.preventDefault();
 }
