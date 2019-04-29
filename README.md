@@ -1,15 +1,15 @@
 Finds the area of simple shapes
 
-Finished:
-    -
+Finished:  
+    -  
 
-In Progress:
-    Square
-    Rectangle
-    Triangle
+In Progress:  
+    Square  
+    Rectangle  
+    Triangle  
 
-Not Currently in Development:
-    Regular Polygons
-    Circles
-    Trapezoids
-    Elipses
+Not Currently in Development:  
+    Regular Polygons  
+    Circles  
+    Trapezoids  
+    Elipses  
