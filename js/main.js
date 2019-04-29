@@ -1,5 +1,11 @@
-// Init
-document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.dropdown-trigger');
-    var instances = M.Dropdown.init(elems, options);
-  });
+const shapeSelector = document.getElementById('shape-selector');
+const calculator = document.getElementById('calculator');
+const calculate = document.getElementById('calculate');
+const calculation = document.querySelector('.calculation');
+
+const square = document.getElementById('square');
+const rectangle = document.getElementById('rectangle');
+const triangle = document.getElementById('triangle');
+
+
+

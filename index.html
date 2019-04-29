@@ -22,29 +22,35 @@
                 <div class="row">
                     <div id="shape-selector">
                         <ul class="pagination center">
-                            <li><a href="#!" id="square" class="btn">Square</a></li>
-                            <li><a href="#!" id="Rectangle" class="btn">Rectangle</a></li>
-                            <li><a href="#!" id="triangle" class="btn">Triangle</a></li>
+                            <li><a href="#!" id="square" class="btn white-text">Square</a></li>
+                            <li><a href="#!" id="rectangle" class="btn white-text">Rectangle</a></li>
+                            <li><a href="#!" id="triangle" class="btn white-text">Triangle</a></li>
                         </ul>
                     </div>
                     <form id="calculator col s12">
                         <div class="row">
-                            <h6 class="col offset-s4">Base:</h6>
+                            <h6 class="col s1 offset-s4">Base:</h6>
                             <div class="col s2">
                                 <input type="number" name="base">
                                 <!--<label for="base">Enter base value</label> -->
                             </div>
-                            <br>
-                            <h6 class="col s1 offset-s4">Height:</h6>
-                            <div class="col s2">
-                                <input type="number" name="height">
-                            </div>
                         </div>
+                            <div class="row">
+                                <h6 class="col s1 offset-s4">Height:</h6>
+                                <div class="col s2">
+                                    <input type="number" name="height">
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="center" id="calculate">
+                        <button type="submit" id="calculate-btn" class="btn">Submit</button>
+                        </div>
+                        <br>
                     </form>
-                </div>
-                <div class="calculation center">
-                    <h4 class="answer">Test</h4>
-                    <br>
+                    <div class="calculation center">
+                        <h4 class="answer"></h4>
+                        <br>
+                    </div>
                 </div>
             </div>
         </div>
