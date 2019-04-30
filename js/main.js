@@ -1,6 +1,3 @@
-const shapeSelector = document.getElementById('shape-selector');
-const calculator = document.getElementById('calculator');
-const calculate = document.getElementById('calculate');
 const calculation = document.querySelector('.calculation');
 const calculationBtn = document.getElementById('calculate-btn');
 
@@ -22,22 +19,23 @@ function squareCalculator() {
     if (square.classList.contains = 'btn white-text waves-effect') {
         square.className += ' active-link z-depth-0'
 
-        calculationBtn.addEventListener('click', function(e){
+        calculationBtn.addEventListener('click', function (e) {
             let base = document.getElementById('base').value;
             let height = document.getElementById('height').value;
-            if(base != 0 || height != 0){
+            if (base != 0 || height != 0) {
                 calculation.innerText = base * height;
 
             } else {
                 error('Please enter values for both the base and the height');
             }
-            
+
             e.preventDefault();
 
             clearBtn();
-            })
-        }
-    };
+            clearInput();
+        })
+    }
+};
 
 // Rectangle Selector
 function rectangleCalculator() {
@@ -45,20 +43,21 @@ function rectangleCalculator() {
     if (rectangle.classList.contains = 'btn white-text waves-effect') {
         rectangle.className += ' active-link z-depth-0'
 
-        calculationBtn.addEventListener('click', function(e){
+        calculationBtn.addEventListener('click', function (e) {
             let base = document.getElementById('base').value;
             let height = document.getElementById('height').value;
-            if(base != 0 || height != 0){
+            if (base != 0 || height != 0) {
                 calculation.innerText = base * height;
 
             } else {
                 error('Please enter values for both the base and the height');
             }
-            
+
             e.preventDefault();
-            
+
             clearBtn();
-            })
+            clearInput();
+        })
     }
 };
 
@@ -68,21 +67,22 @@ function triangleCalculator() {
     if (triangle.classList.contains = 'btn white-text waves-effect') {
         triangle.className += ' active-link z-depth-0'
 
-        calculationBtn.addEventListener('click', function(e){
+        calculationBtn.addEventListener('click', function (e) {
             let base = document.getElementById('base').value;
             let height = document.getElementById('height').value;
-            if(base != 0 || height != 0){
-                calculation.innerText = base/2 * height;
+            if (base != 0 || height != 0) {
+                calculation.innerText = base / 2 * height;
 
             } else {
                 error('Please enter values for both the base and the height');
-                
+
             }
-            
+
             e.preventDefault();
 
             clearBtn();
-            })
+            clearInput();
+        })
     }
 };
 
@@ -95,6 +95,7 @@ function clearBtn() {
     triangle.className = 'btn white-text waves-effect'
 };
 
+// Create error message
 function error(msg) {
     let error = document.querySelector('.error-msg')
     let h4 = document.createElement('h4')
@@ -104,7 +105,7 @@ function error(msg) {
     error.appendChild(h4);
 
     setTimeout(deleteError, 3000);
-    
+
     console.log(error);
     console.log(h4);
 };
@@ -116,3 +117,11 @@ function deleteError() {
 
     console.log(h4);
 };
+
+// Clear Input
+function clearInput() {
+    let base = document.getElementById('height').value;
+    let height = document.getElementById('base').value;
+
+    remove(base, height);
+}
