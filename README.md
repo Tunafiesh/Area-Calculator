@@ -6,8 +6,8 @@ Finished:
     Triangle  
 
 In Progress:  
-    Error messages . 
-    Other UX features . 
+    Error messages  
+    Other UX features   
 
 Not Currently in Development:  
     Regular Polygons  
