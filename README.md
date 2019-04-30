@@ -1,12 +1,13 @@
 Finds the area of simple shapes
 
 Finished:  
-    -  
-
-In Progress:  
     Square  
     Rectangle  
     Triangle  
+
+In Progress: 
+    Error messages
+    Other UX features
 
 Not Currently in Development:  
     Regular Polygons  
