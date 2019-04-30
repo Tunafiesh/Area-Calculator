@@ -5,9 +5,9 @@ Finished:
     Rectangle  
     Triangle  
 
-In Progress: 
-    Error messages
-    Other UX features
+In Progress:  
+    Error messages . 
+    Other UX features . 
 
 Not Currently in Development:  
     Regular Polygons  
